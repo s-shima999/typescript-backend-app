@@ -38,6 +38,27 @@
     "es6": true
   },
   "rules": {
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/explicit-member-accessibility": "error",
+    "@typescript-eslint/consistent-type-assertions": "error",
+    // "comma-dangle": [
+    //   "warn",
+    //   "always"
+    // ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
     "quotes": [
       "warn",
       "single",
@@ -48,6 +69,22 @@
     "semi": [
       "error",
       "always"
+    ],
+    "@typescript-eslint/no-unsafe-call": "error",
+    "@typescript-eslint/no-unsafe-return": "error",
+    "no-magic-numbers": "off",
+    "@typescript-eslint/no-magic-numbers": [
+      "warn",
+      {
+        "ignoreEnums": true,
+        "ignoreReadonlyClassProperties": true
+      }
+    ],
+    "@typescript-eslint/array-type": [
+      "error",
+      {
+        "default": "array-simple"
+      }
     ]
   }
 }
