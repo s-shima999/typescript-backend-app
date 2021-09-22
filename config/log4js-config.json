@@ -1,0 +1,20 @@
+{
+    "appenders": {
+        "logfile": { 
+            "type": "dateFile", 
+            "filename": "./logs/application.log",
+            "pattern": ".yyyy-MM-dd",
+            "daysToKeep": 7,
+            "keepFileExt": true,
+            "compress": true
+        }
+    },
+    "categories": { 
+        "default": { 
+            "appenders": [
+                "logfile"
+            ], 
+            "level": "info" 
+        } 
+    }
+}
