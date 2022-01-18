@@ -1,0 +1,18 @@
+{
+    "log4js": {
+        "appenders": {
+            "logfile": { 
+                "type": "file", 
+                "filename": "logs/app.log"
+            }
+        },
+        "categories": { 
+            "default": { 
+                "appenders": [
+                    "logfile"
+                ], 
+                "level": "INFO" 
+            } 
+        }
+    }
+}

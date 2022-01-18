@@ -1,5 +1,5 @@
 import * as Log4js from 'log4js';
-import Config from '../Config';
+import { Config } from '../Config';
 
 export default class Logger{
   
@@ -9,6 +9,13 @@ export default class Logger{
      * 
     */
     private static init(): void{
+
+        // TODO:Configを使う方法
+        // const configFilePath = Path.join(__dirname,'config');
+        // const configure = Config.util.loadFileConfigs(configFilePath).log4js;
+        // const configure = Config.get<Log4js.Configuration>('log4js');
+        // Log4js.configure(configure);
+
         Log4js.configure(Config.LOG_FILE_PATH);
         this.logger = Log4js.getLogger();
     }

@@ -1,6 +1,8 @@
-function abc(){
-    let a = new aaa.Person();
-    let b = new bbb.Person();
+function abc(): void{
+    // 
 }
 
-console.log("Hello World!");
+if (require.main === module){
+    console.log('Hello World!'); // eslint-disable-line no-console
+    abc();
+}
