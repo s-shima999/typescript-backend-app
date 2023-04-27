@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "agentkeepalive": "^4.1.4",
-    "aws-sdk": "^2.981.0",
+    "aws-sdk": "^2.1366.0",
     "config": "^3.3.6",
     "express": "^4.17.1",
     "log4js": "^6.3.0",
